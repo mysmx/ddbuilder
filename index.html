@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Drag and drop form builder</title>
+    <link  href="dd.css" rel="stylesheet" type="text/css">
+    <script src="dd.js"></script>
+  </head>
+  <body>
+    <h2>Drag and drop form builder (developed in native js and css)</h2>
+    <fieldset class="elements">
+      <legend>Double click to add element to workspace</legend>
+      <div draggable="true" class="box"><label class="label">Text</label> <input type="text" value=""></div>
+      <div draggable="true" class="box"><button class="label">Button</button></div>
+      <!--div draggable="true" class="box">put your element here, you can use class label for edit section</div-->
+    </fieldset>
+  <fieldset class="info">
+    <legend>Edit</legend>
+      Текст <input type="text" value="" id="info_text">
+      <input type="hidden" value="" id="info_id">
+      <button id="info_save">Ok</button>
+  </fieldset>
+  <fieldset>
+    <legend>Double click to remove element from workspace and single click to edit. You can drag and drop element to change position</legend>
+    <div class="container_body"><div class="container"></div></div>
+  </fieldset>
+  <fieldset>
+    <legend>Result</legend>
+    <button id="make_hmtl">Make html</button>
+    <textarea id="html_body"></textarea>
+  </fieldset>
+  </body>
+</html>
